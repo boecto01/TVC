@@ -61,8 +61,8 @@ def update_csv(file_name, url):
     # 内容有变则备份并写入
     if new_content != local_content:
         print(f"{file_name} 内容有变，自动保存历史并更新。")
-        if local_content.strip():
-            save_history(file_name, local_content)
+    #    if local_content.strip():
+    #       save_history(file_name, local_content)
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(new_content)
     else:
