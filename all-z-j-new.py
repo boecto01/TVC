@@ -277,7 +277,7 @@ def test_speed_and_output(channels, output_prefix="itvlist"):
 
     optimized_sources = []
     for channel_name, sources in channel_sources.items():
-        sorted_sources = sorted(sources, key=lambda x: float(x[1].split()[0]), reverse=True)[:8]
+        sorted_sources = sorted(sources, key=lambda x: float(x[1].split()[0]), reverse=True)[:15]
         for url, speed in sorted_sources:
             optimized_sources.append((channel_name, url, speed))
 
@@ -376,6 +376,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
