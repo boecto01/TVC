@@ -269,7 +269,7 @@ def test_speed_and_output(channels, output_prefix="itvlist"):
         task_queue.put(channel)
     task_queue.join()
 
-    # 按速度排序并筛选每个频道最多8个源
+    # 按速度排序并筛选每个频道最多15个源
     from collections import defaultdict
     channel_sources = defaultdict(list)
     for channel_name, channel_url, speed in speed_results:
@@ -376,6 +376,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
