@@ -1,4 +1,4 @@
-name: Update IPTV CSV Files
+name: 更新酒店源列表CSV
 
 on:
   workflow_dispatch:
